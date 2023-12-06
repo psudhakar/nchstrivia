@@ -102,7 +102,7 @@ col1, col2 = st.columns([1,30])
 
 with col1:
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://drive.google.com/uc?id=1mTbNpv2DyU2zv8xm73wBc1GVH2EJYdqR" alt="Image"  style="margin-top: 30px;" class="responsive-image">
+    <img src="https://drive.google.com/uc?id=1mTbNpv2DyU2zv8xm73wBc1GVH2EJYdqR" alt="Image"  style="margin-top: 30px;">
     </div>""", unsafe_allow_html=True)
 
 with col2:
