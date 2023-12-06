@@ -160,7 +160,7 @@ with col1:
         #Save the sheet to Google Sheets
 
         registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
-        save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
+        #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
 
 
         st.success("Registration submitted successfully! You will receive a confirmation email shortly.")
