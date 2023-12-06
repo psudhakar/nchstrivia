@@ -89,6 +89,12 @@ st.markdown("""
         margin-left: auto; 
         margin-right: auto;
     }
+            
+    @media screen and (max-width: 768px) {
+            .responsive-image {
+                display: none;
+            }
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -168,7 +174,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px;">
+    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px; class="responsive-image"">
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
