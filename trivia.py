@@ -99,15 +99,17 @@ st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night fo
 
 col1, col2 = st.columns(2)
 
+
 with col1:
-    # Event details
-    st.header("Join Us!")
-    st.markdown("""
-    - 🗓️ **Date:** Saturday, February 3rd, 2024
-    - 🕗 **Time:** 6 PM to 9 PM
-    - 📍 **Venue:** Parke Residency, 1413, Leslie Dr, Bloomington, IL
-    - 💡 Hosted by the legendary Trivia City!
-    """)
+    with st.container():
+        # Event details
+        st.header("Join Us!")
+        st.markdown("""
+        - 🗓️ **Date:** Saturday, February 3rd, 2024
+        - 🕗 **Time:** 6 PM to 9 PM
+        - 📍 **Venue:** Parke Residency, 1413, Leslie Dr, Bloomington, IL
+        - 💡 Hosted by the legendary Trivia City!
+        """)
 
     # Registration instructions
     st.header("Registration")
