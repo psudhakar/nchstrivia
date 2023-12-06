@@ -98,13 +98,20 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-#st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
-st.markdown("# Trivia Night 2024 ")
-st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
-st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
+col1, col2 = st.columns([1,30])
+
+with col1:
+    st.markdown(f"""<div style="text-align: center;">
+    <img src="https://drive.google.com/uc?id=1mTbNpv2DyU2zv8xm73wBc1GVH2EJYdqR" alt="Image"  style="margin-top: 30px;" class="responsive-image">
+    </div>""", unsafe_allow_html=True)
+
+with col2:
+    #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
+    st.markdown("# Trivia Night 2024 ")
+    st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
+    st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
 col1, col2 = st.columns(2)
-
 
 with col1:
     with st.container():
@@ -174,7 +181,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px; class="responsive-image"">
+    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px;" class="responsive-image">
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
