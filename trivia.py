@@ -78,7 +78,7 @@ st.markdown("""
     }
     
     h5 {
-        color: Purple;
+        color: dark;
         text-align: center;
     }
     .font {
@@ -107,6 +107,7 @@ st.markdown("""
 
 #with col2:
 #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
+st.write("")  # This adds a blank line
 st.markdown("# NCHS Trivia Night 2024 ")
 st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
 st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
