@@ -98,18 +98,18 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-col1, col2 = st.columns([1,30])
+#col1, col2 = st.columns([1,50])
 
-with col1:
-    st.markdown(f"""<div style="text-align: center;">
-    <img src="https://drive.google.com/uc?id=1mTbNpv2DyU2zv8xm73wBc1GVH2EJYdqR" alt="Image"  style="margin-top: 30px;">
-    </div>""", unsafe_allow_html=True)
+#with col1:
+#    st.markdown(f"""<div style="text-align: center;">
+#    <img src="https://github.com/psudhakar/nchstrivia/blob/main/nchslogo.jpg?raw=true" alt="Image"  style="margin-top: 30px;">
+#    </div>""", unsafe_allow_html=True)
 
-with col2:
-    #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
-    st.markdown("# Trivia Night 2024 ")
-    st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
-    st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
+#with col2:
+#st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
+st.markdown("# NCHS Trivia Night 2024 ")
+st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
+st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
 col1, col2 = st.columns(2)
 
@@ -213,3 +213,12 @@ with col4:
     st.markdown("Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705`")
 
     
+
+# -----------------
+# Contact Us Section
+# -----------------
+st.markdown("## Contact Us")
+st.markdown("For any queries or feedback, feel free to reach out to us:")
+st.markdown(":email: **Email:** [nchsjr.board@gmail.com](mailto:nchsjr.board@gmail.com)")
+st.markdown(":blue_heart: **Facebook:** [Nchs After Prom](https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
+st.markdown(":bird: **Twitter:** [Nchs2021](https://twitter.com/Nchs2021)")
