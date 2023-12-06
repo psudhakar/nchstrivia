@@ -166,7 +166,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image" >
+    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px;">
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
@@ -196,3 +196,5 @@ with col3:
 with col4:
     st.markdown("#### Check")
     st.markdown("Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705`")
+
+    
