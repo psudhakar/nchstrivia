@@ -49,7 +49,7 @@ def send_email(to_email, data, cc_email="nchsjr.board@gmail.com"):
     message['Cc'] = cc_email
     message['Subject'] = 'NCHS After Prom 2023 Trivia Night Registration'
 
-    body = f"Here is the registration data submitted:\n\n{data}"
+    body = f"Here is the registration data submitted:\n{data}"
     message.attach(MIMEText(body, 'plain'))
 
     # Send the email
