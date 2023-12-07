@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-from PIL import Image
+import re
 
 
 
@@ -58,6 +58,17 @@ def send_email(to_email, data, cc_email="nchsjr.board@gmail.com"):
     server.login(smtp_user, smtp_password)
     server.send_message(message)
     server.quit()
+
+def validate_email(email):
+    # Regular expression pattern for basic email validation
+    pattern = r"^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+    return re.match(pattern, email)
+
+def validate_field(value):
+    if len(value) == 0:
+        return False
+    else:
+        return True
 
 # Hide hamburger menu and footer
 st.set_page_config(page_title="Trivia Night by NCHS After Prom Team", layout="wide", menu_items={
@@ -116,8 +127,14 @@ st.markdown("""
 
 #with col2:
 #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=True)
+
 st.write("")  # This adds a blank line
-st.markdown("# NCHS Trivia Night 2024 ")
+
+#st.markdown(f"""<div style="text-align: center;">
+#    <img src="https://drive.google.com/uc?id=1H5QIUKIllQeNLaRc9b4OFO6Ok2fa1FiG" alt="Image"  style="margin-top: 30px;" class="responsive-image">
+#    </div>""", unsafe_allow_html=True)
+
+st.markdown("# NCHS Trivia Night 2024")
 st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
 st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
@@ -162,32 +179,34 @@ with col1:
         submit_button = st.form_submit_button(label='Submit')
 
     if submit_button:
-        # Prepare the data to be sent via email
-        data = f"""
-        Team Contact: {team_contact}
-        Team Name: {team_name}
-        Team Contact Email: {team_contact_email}
-        Team Contact Phone: {team_contact_phone}
-        """
-        data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
-        data += "Using Venmo, pay to  : Li-Boyer \n"
-        data += "Using Zelle, pay to  : 3098265826 \n"
-        data += "Using Paypal, pay to  : Carriezhengli@gmail.com \n"
-        data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
+        if validate_email(team_contact_email) and validate_field(team_name) and validate_field(team_contact) and validate_field(team_contact_phone):
+            # Prepare the data to be sent via email
+            data = f"""
+            Team Contact: {team_contact}
+            Team Name: {team_name}
+            Team Contact Email: {team_contact_email}
+            Team Contact Phone: {team_contact_phone}
+            """
+            data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
+            data += "Using Venmo, pay to  : Li-Boyer \n"
+            data += "Using Zelle, pay to  : 3098265826 \n"
+            data += "Using Paypal, pay to  : Carriezhengli@gmail.com \n"
+            data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
 
-        data += "For any questions, please contact nchsjr.board@gmail.com or call (404)800-3312] \n"
-        
+            data += "For any questions, please contact nchsjr.board@gmail.com \n"
+            
 
-        # Send the email
-        send_email(team_contact_email, data)
+            # Send the email
+            send_email(team_contact_email, data)
 
-        #Save the sheet to Google Sheets
+            #Save the sheet to Google Sheets
 
-        registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
-        #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
+            registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
+            #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
+            st.success("Registration submitted successfully! Next steps. Please submit a payment for $100 for 6 players per table. If you are playing solo, pay $20 per person, and we will team you up with a wonderful trivia soulmates!")
+        else:
+            st.markdown(':red[Make sure to enter Team name, Team, Contact, Phone Number and valid email address!]')
 
-
-        st.success("Registration submitted successfully! Next steps. Please submit a payment for $100 for 6 players per table. If you are playing solo, pay $20 per person, and we will team you up with a wonderful trivia soulmates!")
 
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
