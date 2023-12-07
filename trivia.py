@@ -5,6 +5,9 @@ from email.mime.multipart import MIMEMultipart
 import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from PIL import Image
+
+
 
 
 # Function to save data to Google Sheets
@@ -160,13 +163,14 @@ with col1:
         Team Contact Email: {team_contact_email}
         Team Contact Phone: {team_contact_phone}
         """
-        data += "Use any payment methods below. Please add your name or email address in the comments section of the payment. \n"
-        data += "Using Venmo, pay to  : Jayshri-Patel-5 \n"
-        data += "Using Zelle/Paypal, pay to  : sudhakar.parsi@gmail.com \n"
-        data += "Using Cash, pay to  : $SudhakarParsi \n\n"
-        data += "Once the payment is made, you will receive an email with Krispy Kreme gift voucher in next 24-28 hours. \n"
+        data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
+        data += "Using Venmo, pay to  : Li-Boyer \n"
+        data += "Using Zelle, pay to  : 3098265826 \n"
+        data += "Using Paypal, pay to  : Carriezhengli@gmail.com \n"
+        data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
+
         data += "For any questions, please contact nchsjr.board@gmail.com or call (404)800-3312] \n"
-        data += "Make checks payable to 'NCHS After Prom' and mail to 5018 Londonderry Road, Bloomington, IL - 61705"
+        
 
         # Send the email
         send_email(team_contact_email, data)
@@ -177,12 +181,12 @@ with col1:
         #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
 
 
-        st.success("Registration submitted successfully! You will receive a confirmation email shortly.")
+        st.success("Registration submitted successfully! Next steps. Please submit a payment for $100 for 6 players per table. If you are playing solo, pay $20 per person, and we will team you up with a wonderful trivia soulmates!")
 
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true" alt="Image"  style="margin-top: 30px;" class="responsive-image">
+    <img src="https://drive.google.com/uc?id=1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image">
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
@@ -200,15 +204,15 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("#### Venmo")
     st.markdown("Click [here](https://venmo.com/Li-Boyer) or send it to `Li-Boyer`")
-    st.image("https://github.com/psudhakar/nchstrivia/blob/main/Venmo-Boyer.jpg?raw=true", use_column_width=None)
+    st.image("https://drive.google.com/uc?id=1c0iAc6b2o48oYFCb8raC0qrn0D47ag6F", use_column_width=None)
 with col2:
-    st.markdown("#### Zelle/PayPal")
-    st.markdown("Send your payments to: `Carriezhengli@gmail.com`")
-    st.image("https://github.com/psudhakar/nchstrivia/blob/main/Zelle-Boyer.jpg?raw=true", use_column_width=None)
+    st.markdown("#### Zelle")
+    st.markdown("Send your payments to: `3098265826`")
+    st.image("https://drive.google.com/uc?id=1ywiw7qvUwiU7yPJPwGaykyZ7IHxbdRhn", use_column_width=None)
 with col3:
     st.markdown("#### Paypal")
     st.markdown("Send your payments to to `Carriezhengli@gmail.com`")
-    st.image("https://github.com/psudhakar/nchstrivia/blob/main/Paypal-Boyer.jpg?raw=true", use_column_width=None)
+    st.image("https://drive.google.com/uc?id=1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
 with col4:
     st.markdown("#### Check")
     st.markdown("Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705`")
@@ -222,4 +226,4 @@ st.markdown("## Contact Us")
 st.markdown("For any queries or feedback, feel free to reach out to us:")
 st.markdown(":email: **Email:** [nchsjr.board@gmail.com](mailto:nchsjr.board@gmail.com)")
 st.markdown(":blue_heart: **Facebook:** [Nchs After Prom](https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
-st.markdown(":bird: **Twitter:** [Nchs2021](https://twitter.com/Nchs2021)")
+st.markdown(":camera: **Instagram:** [nchs_afterprom](https://instagram.com/nchs_afterprom)")
