@@ -156,7 +156,7 @@ with col1:
     st.header("Registration")
     st.markdown("""
         1.	Gather your cleverest crew and register your team below!
-            **Squad Discount:** Only \$100 for a table of 6, otherwise $20 per individual
+        2. **Squad Discount:** Only \$100 for a table of 6, otherwise $20 per individual
         2.	Flying solo, no problem! We are Trivia matchmakers, ready to pair you with your trivia soulmates!
         3.	Fuel your brains with delicious snacks and drinks (available for purchase)!
         4.	Put your heads together to conquer tricky questions and earn bragging rights!
