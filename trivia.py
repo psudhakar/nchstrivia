@@ -151,15 +151,18 @@ with col1:
         - 💡 Hosted by the legendary Trivia City!
         """)
 
+    st.markdown("Join us for an unforgettable evening of brain-bending trivia and feel-good fun at our Trivia Night Fundraiser 2024 benefiting a safer After prom. Get ready for an epic trivia throwdown masterminded by Jr. Classboard's most imaginative parents and hosted by the legendary Trivia City")
     # Registration instructions
     st.header("Registration")
     st.markdown("""
         1.	Gather your cleverest crew and register your team below!
-            Squad Discount: Only \$100 for a table of 6, otherwise $20 per individual
+            **Squad Discount:** Only \$100 for a table of 6, otherwise $20 per individual
         2.	Flying solo, no problem! We are Trivia matchmakers, ready to pair you with your trivia soulmates!
         3.	Fuel your brains with delicious snacks and drinks (available for purchase)!
         4.	Put your heads together to conquer tricky questions and earn bragging rights!
         5.	Most importantly, support a fantastic cause: creating a safe and memorable Afterprom experience for our NCHS students!
+        6.  Come dressed in a Hawaiian theme, even decorate your table to win best themed table!
+        7.  Doors open at 6pm, Trivia starts at 7pm - 9pm
                 
     """, unsafe_allow_html=True)
 
@@ -188,9 +191,9 @@ with col1:
             Team Contact Phone: {team_contact_phone}
             """
             data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
-            data += "Using Venmo, pay to  : Li-Boyer \n"
-            data += "Using Zelle, pay to  : 3098265826 \n"
-            data += "Using Paypal, pay to  : Carriezhengli@gmail.com \n"
+            data += "Using Venmo, pay to  : @Li-Boyer \n"
+            data += "Using Zelle, pay to  : (309) 826-5826 (Li Boyer) \n"
+            data += "Using Paypal, pay to  : Carriezhengli@gmail.com (Li Boyer)\n"
             data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
 
             data += "For any questions, please contact nchsjr.board@gmail.com \n"
@@ -203,7 +206,7 @@ with col1:
 
             registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
             #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
-            st.success("Registration submitted successfully! Next steps. Please submit a payment for \$100 for 6 players per table. If you are playing solo, pay \$20 per person, and we will team you up with a wonderful trivia soulmates!")
+            st.success("Registration submitted successfully! Next steps. Please submit a payment for \$100 for 6 players per table. If you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
         else:
             st.markdown(':red[Make sure to enter Team name, Team, Contact, Phone Number and valid email address!]')
 
@@ -228,19 +231,19 @@ st.header("Payment Options")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("#### Venmo")
-    st.markdown("Click [here](https://venmo.com/Li-Boyer) or send it to `Li-Boyer`")
+    st.markdown("Click [here](https://venmo.com/Li-Boyer) or send it to @Li-Boyer")
     st.image("https://drive.google.com/uc?id=1c0iAc6b2o48oYFCb8raC0qrn0D47ag6F", use_column_width=None)
 with col2:
     st.markdown("#### Zelle")
-    st.markdown("Send your payments to: `3098265826`")
+    st.markdown("Send your payments to: (309) 826-5826 (Li Boyer)")
     st.image("https://drive.google.com/uc?id=1ywiw7qvUwiU7yPJPwGaykyZ7IHxbdRhn", use_column_width=None)
 with col3:
     st.markdown("#### Paypal")
-    st.markdown("Send your payments to to `Carriezhengli@gmail.com`")
+    st.markdown("Send your payments to:  Carriezhengli@gmail.com (Li Boyer) ")
     st.image("https://drive.google.com/uc?id=1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
 with col4:
-    st.markdown("#### Check")
-    st.markdown("Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705`")
+    st.markdown("#### Pay be Check")
+    st.markdown("Make checks payable to: 'NCHS After Prom' and mail to: 5018 Londonderry Road Bloomington IL - 61705")
 
     
 
@@ -252,6 +255,7 @@ st.markdown("For any queries or feedback, feel free to reach out to us:")
 st.markdown(":email: **Email:** [nchsjr.board@gmail.com](mailto:nchsjr.board@gmail.com)")
 st.markdown(":blue_heart: **Facebook:** [Nchs After Prom](https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
 st.markdown(":camera: **Instagram:** [nchs_afterprom](https://instagram.com/nchs_afterprom)")
+st.markdown(":phone: **Call:** Li Boyer - (309) 826 5826 | Srinivas Talasu - (309) 750-1456")
 
 st.markdown(f"""<div style="text-align: center;">
 <img src="https://drive.google.com/uc?id=1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
