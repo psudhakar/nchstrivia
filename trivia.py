@@ -98,6 +98,12 @@ st.markdown("""
                 display: none;
             }
     }
+    @media screen and (min-width: 768px) {
+        .responsive-image2 {
+            display: none;
+    }
+    }
+
     </style>
     """, unsafe_allow_html=True)
 
@@ -227,3 +233,7 @@ st.markdown("For any queries or feedback, feel free to reach out to us:")
 st.markdown(":email: **Email:** [nchsjr.board@gmail.com](mailto:nchsjr.board@gmail.com)")
 st.markdown(":blue_heart: **Facebook:** [Nchs After Prom](https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
 st.markdown(":camera: **Instagram:** [nchs_afterprom](https://instagram.com/nchs_afterprom)")
+
+st.markdown(f"""<div style="text-align: center;">
+<img src="https://drive.google.com/uc?id=1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
+</div>""", unsafe_allow_html=True)
