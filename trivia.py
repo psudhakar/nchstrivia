@@ -192,10 +192,11 @@ with col1:
                 Team Contact Email: {team_contact_email}
                 Team Contact Phone: {team_contact_phone}
                 """
-                data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
-                data += "Using Venmo, pay to  : @Li-Boyer \n"
-                data += "Using Zelle, pay to  : (309) 826-5826 (Li Boyer) \n"
-                data += "Using Paypal, pay to  : Carriezhengli@gmail.com (Li Boyer)\n"
+                data += "\n\nUse any payment methods below, if you have not paid yet. \n\n"
+                data += "Please add your name or email address in the comments section of the payment. \n\n"
+                data += "Using Venmo, pay to  : @Li-Boyer \n\n"
+                data += "Using Zelle, pay to  : (309) 826-5826 (Li Boyer) \n\n"
+                data += "Using Paypal, pay to  : Carriezhengli@gmail.com (Li Boyer) \n\n"
                 data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
 
                 data += "For any questions, please contact nchsjr.board@gmail.com \n"
@@ -216,7 +217,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://drive.google.com/uc?id=1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image">
+    <img src="https://drive.google.com/uc?id=1lgGBI2OaO2Ir-Vzo1JpJ_LdD5_j0z9Yd" alt="Flyer"  style="margin-top: 30px;" class="responsive-image">
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
