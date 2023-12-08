@@ -183,33 +183,34 @@ with col1:
         submit_button = st.form_submit_button(label='Submit')
 
     if submit_button:
-        if validate_email(team_contact_email) and validate_field(team_name) and validate_field(team_contact) and validate_field(team_contact_phone):
-            # Prepare the data to be sent via email
-            data = f"""
-            Team Contact: {team_contact}
-            Team Name: {team_name}
-            Team Contact Email: {team_contact_email}
-            Team Contact Phone: {team_contact_phone}
-            """
-            data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
-            data += "Using Venmo, pay to  : @Li-Boyer \n"
-            data += "Using Zelle, pay to  : (309) 826-5826 (Li Boyer) \n"
-            data += "Using Paypal, pay to  : Carriezhengli@gmail.com (Li Boyer)\n"
-            data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
+        with st.spinner("Processing..."):
+            if validate_email(team_contact_email) and validate_field(team_name) and validate_field(team_contact) and validate_field(team_contact_phone):
+                # Prepare the data to be sent via email
+                data = f"""
+                Team Contact: {team_contact}
+                Team Name: {team_name}
+                Team Contact Email: {team_contact_email}
+                Team Contact Phone: {team_contact_phone}
+                """
+                data += "\n\nUse any payment methods below. Please add your name or email address in the comments section of the payment. \n"
+                data += "Using Venmo, pay to  : @Li-Boyer \n"
+                data += "Using Zelle, pay to  : (309) 826-5826 (Li Boyer) \n"
+                data += "Using Paypal, pay to  : Carriezhengli@gmail.com (Li Boyer)\n"
+                data += "Make checks payable to 'NCHS After Prom' and mail to `5018 Londonderry Road Bloomington IL - 61705 \n\n"
 
-            data += "For any questions, please contact nchsjr.board@gmail.com \n"
-            
+                data += "For any questions, please contact nchsjr.board@gmail.com \n"
+                
 
-            # Send the email
-            send_email(team_contact_email, data)
+                # Send the email
+                send_email(team_contact_email, data)
 
-            #Save the sheet to Google Sheets
+                #Save the sheet to Google Sheets
 
-            registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
-            save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
-            st.success("Registration submitted successfully! Next steps. Please submit a payment for \$100 for 6 players per table. If you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
-        else:
-            st.markdown(':red[Make sure to enter Team name, Team, Contact, Phone Number and valid email address!]')
+                registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
+                save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
+                st.success("Registration submitted successfully! Next steps. Please submit a payment for \$100 for 6 players per table. If you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
+            else:
+                st.markdown(':red[Make sure to enter Team name, Team, Contact, Phone Number and valid email address!]')
 
 
 with col2:
