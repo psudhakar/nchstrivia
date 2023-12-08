@@ -25,7 +25,8 @@ def save_to_sheet(data, sheet_url):
         'auth_uri': st.secrets['gcp_service_account']['auth_uri'],
         'token_uri': st.secrets['gcp_service_account']['token_uri'],
         'auth_provider_x509_cert_url': st.secrets['gcp_service_account']['auth_provider_x509_cert_url'],
-        'client_x509_cert_url': st.secrets['gcp_service_account']['client_x509_cert_url']
+        'client_x509_cert_url': st.secrets['gcp_service_account']['client_x509_cert_url'],
+        'universe_domain': st.secrets['gcp_service_account']['universe_domain']
     }
     creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     client = gspread.authorize(creds)
@@ -205,7 +206,7 @@ with col1:
             #Save the sheet to Google Sheets
 
             registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
-            #save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
+            save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
             st.success("Registration submitted successfully! Next steps. Please submit a payment for \$100 for 6 players per table. If you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
         else:
             st.markdown(':red[Make sure to enter Team name, Team, Contact, Phone Number and valid email address!]')
