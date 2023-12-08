@@ -172,7 +172,7 @@ with col1:
     """, unsafe_allow_html=True)
 
     # Form for registration
-    with st.form(key='registration_form'):
+    with st.form(key='registration_form', clear_on_submit=True):
         st.markdown("#### Team Registration - NCHS After Prom 2024 Trivia Night")
         team_contact = st.text_input("Team Contact:")
         team_name = st.text_input("Team Name:")
