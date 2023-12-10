@@ -113,11 +113,13 @@ st.markdown("""
     @media screen and (min-width: 768px) {
         .responsive-image2 {
             display: none;
+        }
     }
-    }
+            
 
     </style>
     """, unsafe_allow_html=True)
+
 
 #col1, col2 = st.columns([1,50])
 
@@ -131,13 +133,16 @@ st.markdown("""
 
 st.write("")  # This adds a blank line
 
-#st.markdown(f"""<div style="text-align: center;">
-#    <img src="https://drive.google.com/uc?id=1H5QIUKIllQeNLaRc9b4OFO6Ok2fa1FiG" alt="Image"  style="margin-top: 30px;" class="responsive-image">
-#    </div>""", unsafe_allow_html=True)
 
-st.markdown("# NCHS Trivia Night 2024")
-st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
-st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
+#st.markdown(f"""
+#    <img src="https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9" alt="Image"  style="margin-top: 30px; width=100%" >
+#    """, unsafe_allow_html=True)
+
+st.image("https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9",use_column_width=True)
+
+#st.markdown("# NCHS Trivia Night 2024")
+#st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
+#st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
 col1, col2 = st.columns(2)
 
