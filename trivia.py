@@ -138,11 +138,11 @@ st.write("")  # This adds a blank line
 #    <img src="https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9" alt="Image"  style="margin-top: 30px; width=100%" >
 #    """, unsafe_allow_html=True)
 
-st.image("https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9",use_column_width=True)
+#st.image("https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9",use_column_width=True)
 
-#st.markdown("# NCHS Trivia Night 2024")
-#st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
-#st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
+st.markdown("# NCHS Trivia Night 2024")
+st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
+st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
 col1, col2 = st.columns(2)
 
