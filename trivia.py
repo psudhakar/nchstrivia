@@ -6,7 +6,7 @@ import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import re
-
+from datetime import datetime
 
 
 
@@ -211,8 +211,10 @@ with col1:
                 send_email(team_contact_email, data)
 
                 #Save the sheet to Google Sheets
+                now = datetime.now()
+                date_time = now.strftime("%Y-%m-%d %H:%M:%S")
 
-                registration_data = [team_contact, team_name, team_contact_email, team_contact_phone]
+                registration_data = [team_contact, team_name, team_contact_email, team_contact_phone, date_time]
                 save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
                 st.success("Registration submitted successfully! \nNext steps: \nPlease submit a payment for \$100 for 6 players per table. \nIf you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
             else:
