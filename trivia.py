@@ -154,10 +154,10 @@ with col1:
         - 🗓️ **Date:** Saturday, February 3rd, 2024
         - 🕗 **Time:** 6 PM to 9 PM
         - 📍 **Venue:** Parke Residency, 1413, Leslie Dr, Bloomington, IL
-        - 💡 Hosted by the legendary Trivia City!
+        - 💡 Hosted by the legendary Twin City Trivia!
         """)
 
-    st.markdown("Join us for an unforgettable evening of brain-bending trivia and feel-good fun at our Trivia Night Fundraiser 2024 benefiting a safer After prom. Get ready for an epic trivia throwdown masterminded by Jr. Classboard's most imaginative parents and hosted by the legendary Trivia City")
+    st.markdown("Join us for an unforgettable evening of brain-bending trivia and feel-good fun at our Trivia Night Fundraiser 2024 benefiting a safer After prom. Get ready for an epic trivia throwdown masterminded by Jr. Classboard's most imaginative parents and hosted by the legendary Twin City Trivia")
     # Registration instructions
     st.header("Registration")
     st.markdown("""
