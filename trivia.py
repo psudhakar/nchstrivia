@@ -183,6 +183,18 @@ with col1:
         team_name = st.text_input("Team Name:")
         team_contact_email = st.text_input("Email address for Team Contact:")
         team_contact_phone = st.text_input("Phone number for Team Contact:")
+        where_heard = st.selectbox(
+            "Where did you hear about Trivia Night?",
+            ("Facebook/Instagram", "Email communication", "NCHS Staff", "Others"),
+            index=0  # Set the default selection to "Facebook/Instagram" (index 0)
+        )
+
+        is_nchs_educator = st.radio(
+            "Are you an NCHS educator?",
+            ("yes", "no"),
+            index=1  # Set the default selection to "no" (index 1)
+        )
+
         
         # Submit button
         submit_button = st.form_submit_button(label='Submit')
@@ -214,7 +226,7 @@ with col1:
                 now = datetime.now()
                 date_time = now.strftime("%Y-%m-%d %H:%M:%S")
 
-                registration_data = [team_contact, team_name, team_contact_email, team_contact_phone, date_time]
+                registration_data = [team_contact, team_name, team_contact_email, team_contact_phone, date_time, where_heard, is_nchs_educator]
                 save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1dGjZj-QNGjpn-oGTkeYKuHfw-okNSM6iYh-HLEN255A/edit?usp=sharing')
                 st.success("Registration submitted successfully! \nNext steps: \nPlease submit a payment for \$100 for 6 players per table. \nIf you are playing solo, pay \$20 per person, and we will team you up with wonderful trivia soulmates!")
             else:
