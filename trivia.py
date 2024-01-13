@@ -7,6 +7,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import re
 from datetime import datetime
+import base64
 
 
 
@@ -236,7 +237,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://drive.google.com/uc?id=1lgGBI2OaO2Ir-Vzo1JpJ_LdD5_j0z9Yd" alt="Flyer"  style="margin-top: 30px;" class="responsive-image">
+    <img src="https://lh3.googleusercontent.com/d/1lgGBI2OaO2Ir-Vzo1JpJ_LdD5_j0z9Yd" alt="Flyer"  style="margin-top: 30px;" class="responsive-image" >
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
@@ -254,15 +255,15 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("#### Venmo")
     st.markdown("Click [here](https://venmo.com/Li-Boyer) or send it to @Li-Boyer")
-    st.image("https://drive.google.com/uc?id=1c0iAc6b2o48oYFCb8raC0qrn0D47ag6F", use_column_width=None)
+    st.image("https://lh3.googleusercontent.com/d/1c0iAc6b2o48oYFCb8raC0qrn0D47ag6F", use_column_width=None)
 with col2:
     st.markdown("#### Zelle")
     st.markdown("Send your payments to: (309) 826-5826 (Li Boyer)")
-    st.image("https://drive.google.com/uc?id=1ywiw7qvUwiU7yPJPwGaykyZ7IHxbdRhn", use_column_width=None)
+    st.image("https://lh3.googleusercontent.com/d/1ywiw7qvUwiU7yPJPwGaykyZ7IHxbdRhn", use_column_width=None)
 with col3:
     st.markdown("#### Paypal")
     st.markdown("Send your payments to:  Carriezhengli@gmail.com (Li Boyer) ")
-    st.image("https://drive.google.com/uc?id=1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
+    st.image("https://lh3.googleusercontent.com/d/1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
 with col4:
     st.markdown("#### Pay by Check")
     st.markdown("Make checks payable to: 'NCHS After Prom' and mail to: 5018 Londonderry Road Bloomington IL - 61705")
