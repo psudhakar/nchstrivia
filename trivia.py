@@ -237,7 +237,7 @@ with col1:
 with col2:
     #st.image("https://github.com/psudhakar/nchstrivia/blob/main/trivia2.JPG?raw=true", use_column_width=None)
     st.markdown(f"""<div style="text-align: center;">
-    <img src="https://lh3.googleusercontent.com/d/1lgGBI2OaO2Ir-Vzo1JpJ_LdD5_j0z9Yd" alt="Flyer"  style="margin-top: 30px;" class="responsive-image" >
+    <img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Flyer"  style="margin-top: 30px;" class="responsive-image" >
     </div>""", unsafe_allow_html=True)
 
 # Streamlit app layout
@@ -268,18 +268,16 @@ with col4:
     st.markdown("#### Pay by Check")
     st.markdown("Make checks payable to: 'NCHS After Prom' and mail to: 5018 Londonderry Road Bloomington IL - 61705")
 
-    
-
 # -----------------
 # Contact Us Section
 # -----------------
 st.markdown("## Contact Us")
 st.markdown("For any queries or feedback, feel free to reach out to us:")
 st.markdown(":email: **Email:** [nchsjr.board@gmail.com](mailto:nchsjr.board@gmail.com)")
-st.markdown(":blue_heart: **Facebook:** [Nchs After Prom](https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
+st.markdown(":blue_heart: **Facebook:** [Nchs After Prom]   (https://www.facebook.com/people/Nchs-After-Prom/100013162357686/)")
 st.markdown(":camera: **Instagram:** [nchs_afterprom](https://instagram.com/nchs_afterprom)")
 st.markdown(":phone: **Contact:** Li Boyer - (309) 826 5826 | Srinivas Talasu - (309) 750-1456")
 
 st.markdown(f"""<div style="text-align: center;">
-<img src="https://lh3.googleusercontent.com/d/1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
+<img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
 </div>""", unsafe_allow_html=True)
