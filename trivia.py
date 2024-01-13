@@ -281,5 +281,5 @@ st.markdown(":camera: **Instagram:** [nchs_afterprom](https://instagram.com/nchs
 st.markdown(":phone: **Contact:** Li Boyer - (309) 826 5826 | Srinivas Talasu - (309) 750-1456")
 
 st.markdown(f"""<div style="text-align: center;">
-<img src="https://drive.google.com/uc?id=1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
+<img src="https://lh3.googleusercontent.com/d/1DBsYMjrT7D2LCbYY6t2ffUn9-i339kqo" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
 </div>""", unsafe_allow_html=True)
