@@ -154,7 +154,7 @@ with col1:
         st.markdown("""
         - 🗓️ **Date:** Saturday, February 3rd, 2024
         - 🕗 **Time:** 6 PM to 9 PM
-        - 📍 **Venue:** , Parke Regency & Conference Center, 1413, Leslie Dr, Bloomington, IL
+        - 📍 **Venue:** , Parke Regency & Conference Center. 1413, Leslie Dr, Bloomington, IL
         - 💡 Hosted by the legendary Twin City Trivia!
         """)
 
