@@ -20,7 +20,7 @@ with col1:
 with col2:
    st.header("Basket #2") 
    st.subheader("Sports and Beyond")
-   st.write("""$100 unit 5 pass, BTT 5 court rentals & BTT Cardio Tennis Classes""")
+   st.write("""$100 unit 5 pass, BTT 5 court rentals & BTT Cardio Tennis Classes. Wonderful gift!""")
    st.write("""Total value: $344""")
    st.image("https://m.media-amazon.com/images/I/71EJua1AlML._AC_SX679_.jpg")
    
@@ -41,31 +41,34 @@ def split_correctly(n1, n2, n3):
         return False
 
 col1, col2 = st.columns(2)
+n1 = 0
+n2 = 0
+n3 = 0
 
 formSubmitted = False
+with st.form(key='ticket_form', clear_on_submit=True):
+    with col1:
 
-with col1:
-    n1 = st.number_input("Number of tickets for Basket 1", min_value=0, max_value=12, value=0)
-    n2 = st.number_input("Number of tickets for Basket 2", min_value=0, max_value=12, value=0) 
-    n3 = st.number_input("Number of tickets for Basket 3", min_value=0, max_value=12, value=0)
-
-with col2:
-    with st.form(key='ticket_form', clear_on_submit=True):
-
-        option = st.radio("Choose an option", ["5 tickets for $10", "12 tickets for $20"])
-        if option == "5 tickets for $10":
-            max_tickets = 5
-        else:
-            max_tickets = 12
-            
-        if n1 + n2 + n3 == max_tickets:
-            st.success("Proceed with the purchase!")
-        else:
-            if n1 + n2 + n3 > max_tickets:
-                st.error("Number of tickets exceeds limit for selected option")
+            option = st.radio("Choose an option", ["5 tickets for $10", "12 tickets for $20"])
+            if option == "5 tickets for $10":
+                max_tickets = 5
             else:
-                st.info("Split the tickets equally into three buckets")
-        submitted = st.form_submit_button("Submit", disabled=not split_correctly(n1, n2, n3))
+                max_tickets = 12
+
+            if n1 + n2 + n3 == max_tickets:
+                st.success("Proceed with the purchase!")
+            else:
+                if n1 + n2 + n3 > max_tickets:
+                    st.error("Number of tickets exceeds limit for selected option")
+                else:
+                    st.info("Split the tickets equally into three buckets")
+                
+    with col2:
+        n1 = st.number_input("Number of tickets for Basket 1", min_value=0, max_value=12, value=0)
+        n2 = st.number_input("Number of tickets for Basket 2", min_value=0, max_value=12, value=0) 
+        n3 = st.number_input("Number of tickets for Basket 3", min_value=0, max_value=12, value=0)
+
+    submitted = st.form_submit_button("Submit", disabled=not split_correctly(n1, n2, n3))
 
 if submitted:  
     tickets = n1 + n2 + n3
