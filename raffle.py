@@ -64,9 +64,9 @@ with st.form(key='ticket_form', clear_on_submit=True):
                     st.info("Split the tickets equally into three buckets")
                 
     with col2:
-        n1 = st.number_input("Number of tickets for Basket 1", min_value=0, max_value=12, value=0)
-        n2 = st.number_input("Number of tickets for Basket 2", min_value=0, max_value=12, value=0) 
-        n3 = st.number_input("Number of tickets for Basket 3", min_value=0, max_value=12, value=0)
+        n1 = st.number_input("Number of tickets for Basket #1", min_value=0, max_value=12, value=0)
+        n2 = st.number_input("Number of tickets for Basket #2", min_value=0, max_value=12, value=0) 
+        n3 = st.number_input("Number of tickets for Basket #3", min_value=0, max_value=12, value=0)
 
     submitted = st.form_submit_button("Submit", disabled=not split_correctly(n1, n2, n3))
 
