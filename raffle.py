@@ -152,7 +152,6 @@ with st.form(key='ticket_form', clear_on_submit=False):
             if tickets > max_tickets:
                 st.error("Number of tickets exceeds limit for selected option")
             else:
-                st.success("Raffle ticket purchase successful! If you have not already paid for the tickets, please proceed with following payment options!")
                 st.header("Payment Options")
 
                 # Payment options
@@ -198,6 +197,8 @@ with st.form(key='ticket_form', clear_on_submit=False):
 
                     registration_data = [name, email, phone, max_tickets, n1, n2, n3, date_time]
                     save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1qedeYFAF6TtyWq2GDpyOOGvrkOXo3GqklUIZG3DRdUk/edit?usp=sharing')
+                    st.success("Raffle ticket purchase successful! If you have not already paid for the tickets, please proceed with following payment options!")
+
 
 
 st.markdown(f"""<div style="text-align: center;">
