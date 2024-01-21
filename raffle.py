@@ -74,7 +74,7 @@ with st.container():
     st.markdown("Dive into the fun of NCHS Trivia Night with our online raffle – your chance to score awesome prizes before the big event safely and securely from the comforts of your couch.")
     st.markdown("Prizes so cool, you'll need a study break just to admire them! Boost your chances of winning awesome prizes, since the odds of winning is huge! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
 
-st.markdown("#### Choose an option")
+st.markdown("### Choose # of tickets and split into buckets")
 option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20"])
 if option == "5 tickets for $10":
     max_tickets = 5
