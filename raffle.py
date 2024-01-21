@@ -163,11 +163,11 @@ with st.form(key='ticket_form', clear_on_submit=False):
                 with col2:
                     st.markdown("#### Zelle")
                     st.markdown("Send your payments to: (404) 800-3312 (Sudhakar Parsi)")
-                    st.image("https://lh3.googleusercontent.com/d/18jjj-g5-Sv9fF1jH0vzymagpsTrFo5-C", use_column_width=None)
+                    st.image("https://lh3.googleusercontent.com/d/1cID276Mt7h0UZ_n7NUoJiOWnbLuiQXcy", use_column_width=None)
                 with col3:
                     st.markdown("#### Paypal")
                     st.markdown("Send your payments to:  sudhakar.parsi@gmail.com (Sudhakar Parsi) ")
-                    st.image("https://lh3.googleusercontent.com/d/1ypbHXOpo82hETfNAbr8sqY4fECdMjdJC", use_column_width=None)
+                    st.image("https://lh3.googleusercontent.com/d/1gRnNFLrR8GrmLtbr23d8QQU11HqMHrjE", use_column_width=None)
                 
                             
                 if validate_email(email) and validate_field(name) and validate_field(phone):
