@@ -84,11 +84,13 @@ with st.container():
     st.markdown("Prizes so cool, you'll need a study break just to admire them! Boost your chances of winning awesome prizes, since the odds of winning is huge! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
 
 st.markdown("### Choose # of tickets and split into buckets")
-option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20"])
+option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20", "26 tickets for $40"])
 if option == "5 tickets for $10":
     max_tickets = 5
-else:
+if option == "12 tickets for $20":
     max_tickets = 12
+if option == "26 tickets for $40":
+    max_tickets = 26
 
 col1, col2, col3 = st.columns(3)
 
