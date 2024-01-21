@@ -162,7 +162,7 @@ with st.form(key='ticket_form', clear_on_submit=False):
                     st.image("https://lh3.googleusercontent.com/d/1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
                 
                             
-                if validate_email(email) and validate_field(name) and validate_field(phone) :
+                if validate_email(email) and validate_field(name) and validate_field(phone):
                     data = f"""
                     Name: {name}
                     EMail: {email}
@@ -171,7 +171,6 @@ with st.form(key='ticket_form', clear_on_submit=False):
                     Bucket-1: {n1}
                     Bucket-2: {n2}
                     Bucket-3: {n3}
-
                     """
                     data += "\n\nUse any payment methods below, if you have not paid yet. \n\n"
                     data += "Please add your name or email address in the comments section of the payment. \n\n"
