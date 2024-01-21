@@ -159,15 +159,15 @@ with st.form(key='ticket_form', clear_on_submit=False):
                 with col1:
                     st.markdown("#### Venmo")
                     st.markdown("Click [here](https://venmo.com/u/SUDHAKAR-Parsi) or send it to @SUDHAKAR-Parsi")
-                    st.image("https://lh3.googleusercontent.com/d/1c0iAc6b2o48oYFCb8raC0qrn0D47ag6F", use_column_width=None)
+                    st.image("https://lh3.googleusercontent.com/d/1ornZZwm3irv_gWhQ7WVH6XcVJA5tYMmp", use_column_width=None)
                 with col2:
                     st.markdown("#### Zelle")
                     st.markdown("Send your payments to: (404) 800-3312 (Sudhakar Parsi)")
-                    st.image("https://lh3.googleusercontent.com/d/1ywiw7qvUwiU7yPJPwGaykyZ7IHxbdRhn", use_column_width=None)
+                    st.image("https://lh3.googleusercontent.com/d/18jjj-g5-Sv9fF1jH0vzymagpsTrFo5-C", use_column_width=None)
                 with col3:
                     st.markdown("#### Paypal")
                     st.markdown("Send your payments to:  sudhakar.parsi@gmail.com (Sudhakar Parsi) ")
-                    st.image("https://lh3.googleusercontent.com/d/1A8QlPnO7WJx2P_MwKBZz4TAYj5PLhlfm", use_column_width=None)
+                    st.image("https://lh3.googleusercontent.com/d/1ypbHXOpo82hETfNAbr8sqY4fECdMjdJC", use_column_width=None)
                 
                             
                 if validate_email(email) and validate_field(name) and validate_field(phone):
@@ -183,7 +183,7 @@ with st.form(key='ticket_form', clear_on_submit=False):
                     data += "\n\nUse any payment methods below, if you have not paid yet. \n\n"
                     data += "Please add your name or email address in the comments section of the payment. \n\n"
                     data += "Using Venmo, pay to  : @SUDHAKAR-Parsi \n\n"
-                    data += "Using Zelle, pay to  : (404) 800-3312 (Sudhakar Parsi) \n\n"
+                    data += "Using Zelle, pay to  : sudhakar.parsi@gmail.com (Sudhakar Parsi) \n\n"
                     data += "Using Paypal, pay to  : sudhakar.parsi@gmail.com (Sudhakar Parsi) \n\n"
 
                     data += "For any questions, please contact nchsjr.board@gmail.com \n"
