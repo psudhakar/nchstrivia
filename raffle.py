@@ -8,7 +8,8 @@ st.set_page_config(page_title="NCHS Trivia Night Raffle - After Prom 2024", page
 st.image("https://lh3.googleusercontent.com/d/1dY782sUfxKrRjjg3pcXLoOdOQ1mbXTTN")
 with st.container():
     st.markdown("### Exciting News!")
-    st.markdown("Dive into the fun of NCHS Trivia Night with our online raffle – your chance to score awesome prizes before the big event safely and securely from the comforts of your couch. Prizes so cool, you'll need a study break just to admire them! Boost your chances of winning awesome prizes, since the odds of winning is huge! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
+    st.markdown("Dive into the fun of NCHS Trivia Night with our online raffle – your chance to score awesome prizes before the big event safely and securely from the comforts of your couch.")
+    st.markdown("Prizes so cool, you'll need a study break just to admire them! Boost your chances of winning awesome prizes, since the odds of winning is huge! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
 
 st.markdown("#### Choose an option")
 option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20"])
