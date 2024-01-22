@@ -95,29 +95,41 @@ if option == "26 tickets for $40":
 col1, col2, col3 = st.columns(3)
 
 with col1:
-   st.header("Basket #1")
-   st.subheader(":orange[Perfect Prom Night]")
-   st.write("""Men's Warehouse rental & Biaggi's $40 gift cards. Great gift idea for the season!!""")
-   st.write("""Total value: **:blue[$298]**""")
-   n1 = st.number_input("Number of tickets for Basket #1", min_value=0, max_value=max_tickets, value=0)
-   st.image("https://m.media-amazon.com/images/I/71EJua1AlML._AC_SX679_.jpg")
+    st.header("Basket #1:")
+    with st.container(border=True):
+        st.subheader(":green[Perfect PROM Night]")
+        st.markdown("**Prom date not included :smile:**")
+        st.markdown("- Biaggi’s $40 Gift Card")
+        st.markdown("- Men’s Warehouse  -Tux /Suit Rental- $259")
+        st.markdown("""Total value: **:blue[$299]**""")
+        n1 = st.number_input("Number of tickets for Basket #1", min_value=0, max_value=max_tickets, value=0)
+        st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
    
    
 with col2:
-   st.header("Basket #2") 
-   st.subheader(":orange[Sports and Beyond]")
-   st.write("""$100 unit 5 pass, BTT 5 court rentals & BTT Cardio Tennis Classes.""")
-   st.write("""Total value: **:blue[$344]**""")
-   n2 = st.number_input("Number of tickets for Basket #2", min_value=0, max_value=max_tickets-n1, value=0)
-   st.image("https://m.media-amazon.com/images/I/71EJua1AlML._AC_SX679_.jpg")
+    st.header("Basket #2") 
+    with st.container(border=True):
+        st.subheader(":red[Go REDBIRD]")
+        st.markdown("- ISU Men’s Football 4 Tickets")
+        st.markdown("- ISU Men’s Basketball 4 Tickets")
+        st.markdown("- ISU Swag")
+
+        st.markdown("""Total value: **:blue[$160]**""")
+        n2 = st.number_input("Number of tickets for Basket #2", min_value=0, max_value=max_tickets-n1, value=0)
+        st.image("https://lh3.googleusercontent.com/d/1u5knlofIt5JRiJJrA8YvNITSc5YQ_oF_")
    
 with col3:
-   st.header("Basket #3")
-   st.subheader(":orange[Go Redbirds!]")
-   st.write("""4 Men's Football and 4 Men's Basketball tickets, ISU swag, popcorn, $100 Unit 5 game pass""")
-   st.write("""Total value: **:blue[$220]**""")  
-   n3 = st.number_input("Number of tickets for Basket #3", min_value=0, max_value=max_tickets-(n1+n2), value=0)
-   st.image("https://m.media-amazon.com/images/I/71EJua1AlML._AC_SX679_.jpg")
+    st.header("Basket #3")
+    with st.container(border=True):
+        st.subheader(":BLUE[SPORTING SPREE!]")
+        st.markdown("- Unit 5 Season Pass -$100")
+        st.markdown("- BTT Cardio Tennis Clinic -2 passes")
+        st.markdown("- BTT Daytime Court Rental -2 passes")
+        st.markdown("- BTT Daytime Pickleball Court Rental -2 passes")
+
+        st.markdown("""Total value: **:blue[$288]**""")  
+        n3 = st.number_input("Number of tickets for Basket #3", min_value=0, max_value=max_tickets-(n1+n2), value=0)
+        st.image("https://lh3.googleusercontent.com/d/1qxMPTw2okKVuVfAFocfOw8w09wtoO8x8")
    
 
 
