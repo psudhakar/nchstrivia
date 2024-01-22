@@ -113,7 +113,7 @@ with col1:
 
         # Display the image using `st.markdown`
         st.markdown(html_img_string, unsafe_allow_html=True)
-#        st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
+#       st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
    
    
 with col2:
