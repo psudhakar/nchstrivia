@@ -250,9 +250,6 @@ with col2:
     <img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Flyer"  style="margin-top: 30px;" class="responsive-image" >
     </div>""", unsafe_allow_html=True)
     st.markdown("")
-    st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
-    st.markdown("🎉 Increase your chances of winning before the event: [Play Now](https://bit.ly/nchsraffle) 🚀")
-    st.markdown("🌟 Don't miss out on the fun! 🌈")
 # Streamlit app layout
 #st.set_page_config(page_title='Trivia Night Registration', layout='centered')
 #logo_url = "https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true"
@@ -294,3 +291,7 @@ st.markdown(":phone: **Contact:** Li Boyer - (309) 826 5826 | Srinivas Talasu -
 st.markdown(f"""<div style="text-align: center;">
 <img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
 </div>""", unsafe_allow_html=True)
+
+st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
+st.markdown("🎉 Increase your chances of winning before the event: [Play Now](https://bit.ly/nchsraffle) 🚀")
+st.markdown("🌟 Don't miss out on the fun! 🌈")
