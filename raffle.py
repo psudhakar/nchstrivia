@@ -117,7 +117,6 @@ with col2:
         st.markdown("""
         <ul style="list-style-position: inside; padding-left: 0px;">
         <li> ISU Men’s Football 4 Tickets </b> </li>
-        <li> ISU Men’s Football 4 Tickets</li>
         <li> ISU Men’s Basketball 4 Tickets</li>
         <li> ISU Swag </li>
         </ul>
