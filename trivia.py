@@ -141,7 +141,7 @@ st.write("")  # This adds a blank line
 
 #st.image("https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9",use_column_width=True)
 
-col1, col2 = st.columns([1,4])
+col1, col2 = st.columns([1,5])
 with col1:
     st.markdown("")
     #st.markdown("**Get your raffle tickets early!** Play online now for Trivia Night: ")
@@ -292,6 +292,13 @@ st.markdown(f"""<div style="text-align: center;">
 <img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Image"  style="margin-top: 30px;" class="responsive-image2">
 </div>""", unsafe_allow_html=True)
 
-st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
-st.markdown("🎉 Increase your chances of winning before the event: [Play Now](https://bit.ly/nchsraffle) 🚀")
-st.markdown("🌟 Don't miss out on the fun! 🌈")
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.markdown("")
+with col2:
+    with st.container(border=True):
+        st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
+        st.markdown("🎉 Increase your chances of winning before the event: [Play Now](https://bit.ly/nchsraffle) 🚀")
+        st.markdown("🌟 Don't miss out on the fun! 🌈")
+with col3:
+    st.markdown("")
