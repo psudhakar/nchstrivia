@@ -146,8 +146,9 @@ with col1:
     st.markdown("")
     #st.markdown("**Get your raffle tickets early!** Play online now for Trivia Night: ")
     #st.markdown("[Join the raffle now!](https://bit.ly/nchsraffle)")
-    st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
-    st.markdown("🎉 [Play Now](https://bit.ly/nchsraffle) 🚀")
+    st.markdown("##### ✨ Skip the line and play the Trivia Night raffle online! 🚀")
+    #st.markdown("🎉 [Play Now](https://bit.ly/nchsraffle) 🚀")
+    st.markdown("<center> <a href='https://bit.ly/nchsraffle'> <b>Play Now</b> </a> </center>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("# NCHS Trivia Night 2024")
@@ -248,7 +249,10 @@ with col2:
     st.markdown(f"""<div style="text-align: center;">
     <img src="https://lh3.googleusercontent.com/d/1u_vpxUp3EtysOCCtGx9tGjkPPbkgMnI2" alt="Flyer"  style="margin-top: 30px;" class="responsive-image" >
     </div>""", unsafe_allow_html=True)
-
+    st.markdown("")
+    st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
+    st.markdown("🎉 Increase your chances of winning before the event: [Play Now](https://bit.ly/nchsraffle) 🚀")
+    st.markdown("🌟 Don't miss out on the fun! 🌈")
 # Streamlit app layout
 #st.set_page_config(page_title='Trivia Night Registration', layout='centered')
 #logo_url = "https://github.com/psudhakar/nchstrivia/blob/main/trivia3.JPG?raw=true"
