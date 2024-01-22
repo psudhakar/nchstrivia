@@ -99,7 +99,7 @@ with col1:
     with st.container(border=True):
         st.subheader(":green[Perfect PROM Night]")
         st.markdown("""
-        <ul style="list-style-position: inside; padding-left: 2px;">
+        <ul style="list-style-position: inside; padding-left: 0px;">
         <li> <b>Prom date not included &#128540; </b> </li>
         <li> Biaggi’s $40 Gift Card</li>
         <li>Men’s Warehouse  -Tux /Suit Rental- $259</li>
@@ -115,7 +115,7 @@ with col2:
     with st.container(border=True):
         st.subheader(":red[Go REDBIRD]")
         st.markdown("""
-        <ul style="list-style-position: inside; padding-left: 2px;">
+        <ul style="list-style-position: inside; padding-left: 0px;">
         <li> ISU Men’s Football 4 Tickets </b> </li>
         <li> ISU Men’s Football 4 Tickets</li>
         <li> ISU Men’s Basketball 4 Tickets</li>
@@ -132,7 +132,7 @@ with col3:
     with st.container(border=True):
         st.subheader(":blue[SPORTING SPREE!]")
         st.markdown("""
-        <ul style="list-style-position: inside; padding-left: 2px;">
+        <ul style="list-style-position: inside; padding-left: 0px;">
         <li> Unit 5 Season Pass -$100 </b> </li>
         <li> BTT Cardio Tennis Clinic -2 passes</li>
         <li> BTT Daytime Court Rental -2 passes</li>
