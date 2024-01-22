@@ -132,7 +132,7 @@ with col3:
         st.subheader(":blue[SPORTING SPREE!]")
         st.markdown("""
         <ul style="list-style-position: inside; padding-left: 0px;">
-        <li> Unit 5 Season Pass -$100 </b> </li>
+        <li> Unit 5 Season Pass, up to 6 people -$100 </b> </li>
         <li> BTT Cardio Tennis Clinic -2 passes</li>
         <li> BTT Daytime Court Rental -2 passes</li>
         <li> BTT Daytime Pickleball Court Rental -2 passes </li>
