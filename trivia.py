@@ -141,9 +141,18 @@ st.write("")  # This adds a blank line
 
 #st.image("https://drive.google.com/uc?id=13lN1bASS74xakpsClZfCNyDAwVILIz-9",use_column_width=True)
 
-st.markdown("# NCHS Trivia Night 2024")
-st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
-st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
+col1, col2 = st.columns([1,4])
+with col1:
+    st.markdown("")
+    #st.markdown("**Get your raffle tickets early!** Play online now for Trivia Night: ")
+    #st.markdown("[Join the raffle now!](https://bit.ly/nchsraffle)")
+    st.markdown("✨ **Skip the line and play the Trivia Night raffle online!**")
+    st.markdown("🎉 [Play Now](https://bit.ly/nchsraffle) 🚀")
+
+with col2:
+    st.markdown("# NCHS Trivia Night 2024")
+    st.markdown("##### Organized by NCHS After Prom Parents Committee 2024")
+    st.markdown("##### Sweat the Questions, Sweeten the Charity Pot: Trivia Night for a Good Cause!")
 
 col1, col2 = st.columns(2)
 
