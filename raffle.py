@@ -76,21 +76,22 @@ def save_to_sheet(data, sheet_url):
     # Append data to the sheet
     sheet.append_row(data)
 
-
 st.image("https://lh3.googleusercontent.com/d/1dY782sUfxKrRjjg3pcXLoOdOQ1mbXTTN")
-with st.container():
+with st.container(border=True):
     st.markdown("### Exciting News!")
     st.markdown("Dive into the fun of [NCHS Trivia Night](https://bit.ly/nchstrivia) with our online raffle – your chance to score awesome prizes before the big event safely and securely from the comforts of your couch.")
-    st.markdown("Prizes so cool, you'll need a study break just to admire them! Boost your chances of winning awesome prizes, since the odds of winning is huge! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
+    st.markdown("Prizes so cool, you'll need a study break just to admire them! Remember, every ticket helps support Afterprom 2024, so it's a win-win!")
+    st.markdown("Drawing will be on **Sat, Feb 3rd at Parke Regency during  Trivia Night 2024.** (*Minimum number of raffle tickets  required)")
 
-st.markdown("### Choose # of tickets and split into buckets")
-option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20", "26 tickets for $40"])
-if option == "5 tickets for $10":
-    max_tickets = 5
-if option == "12 tickets for $20":
-    max_tickets = 12
-if option == "26 tickets for $40":
-    max_tickets = 26
+with st.container(border=True):
+    st.markdown("### Choose # of tickets and split into buckets")
+    option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20", "26 tickets for $40"])
+    if option == "5 tickets for $10":
+        max_tickets = 5
+    if option == "12 tickets for $20":
+        max_tickets = 12
+    if option == "26 tickets for $40":
+        max_tickets = 26
 
 col1, col2, col3 = st.columns(3)
 
@@ -174,7 +175,7 @@ else:
     if n1 + n2 + n3 > max_tickets:
         st.error("Number of tickets exceeds limit for selected option")
     else:
-        st.info("Split the tickets into three buckets")
+        st.info("Split the tickets into three baskets")
 
 def split_correctly(n1, n2, n3):
     if n1 + n2 + n3 == max_tickets:
@@ -244,7 +245,7 @@ with st.form(key='ticket_form', clear_on_submit=False):
 
                     registration_data = [name, email, phone, max_tickets, n1, n2, n3, date_time]
                     save_to_sheet(registration_data, 'https://docs.google.com/spreadsheets/d/1qedeYFAF6TtyWq2GDpyOOGvrkOXo3GqklUIZG3DRdUk/edit?usp=sharing')
-                    st.success("Raffle ticket purchase successful! If you have not already paid for the tickets, please proceed with following payment options!")
+                    st.success("Raffle ticket sign up done. Please proceed to making a payment if you haven’t already paid for the raffle tickets")
 
 
 
