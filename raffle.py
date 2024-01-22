@@ -98,9 +98,13 @@ with col1:
     st.header("Basket #1:")
     with st.container(border=True):
         st.subheader(":green[Perfect PROM Night]")
-        st.markdown("**Prom date not included :smile:**")
-        st.markdown("- Biaggi’s $40 Gift Card")
-        st.markdown("- Men’s Warehouse  -Tux /Suit Rental- $259")
+        st.markdown("""
+        <ul style="list-style-position: inside; padding-left: 2px;">
+        <li> <b>Prom date not included &#128540; </b> </li>
+        <li> Biaggi’s $40 Gift Card</li>
+        <li>Men’s Warehouse  -Tux /Suit Rental- $259</li>
+        </ul>
+        """, unsafe_allow_html=True)
         st.markdown("""Total value: **:blue[$299]**""")
         n1 = st.number_input("Number of tickets for Basket #1", min_value=0, max_value=max_tickets, value=0)
         st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
@@ -110,9 +114,14 @@ with col2:
     st.header("Basket #2") 
     with st.container(border=True):
         st.subheader(":red[Go REDBIRD]")
-        st.markdown("- ISU Men’s Football 4 Tickets")
-        st.markdown("- ISU Men’s Basketball 4 Tickets")
-        st.markdown("- ISU Swag")
+        st.markdown("""
+        <ul style="list-style-position: inside; padding-left: 2px;">
+        <li> ISU Men’s Football 4 Tickets </b> </li>
+        <li> ISU Men’s Football 4 Tickets</li>
+        <li> ISU Men’s Basketball 4 Tickets</li>
+        <li> ISU Swag </li>
+        </ul>
+        """, unsafe_allow_html=True)
 
         st.markdown("""Total value: **:blue[$160]**""")
         n2 = st.number_input("Number of tickets for Basket #2", min_value=0, max_value=max_tickets-n1, value=0)
@@ -121,11 +130,15 @@ with col2:
 with col3:
     st.header("Basket #3")
     with st.container(border=True):
-        st.subheader(":BLUE[SPORTING SPREE!]")
-        st.markdown("- Unit 5 Season Pass -$100")
-        st.markdown("- BTT Cardio Tennis Clinic -2 passes")
-        st.markdown("- BTT Daytime Court Rental -2 passes")
-        st.markdown("- BTT Daytime Pickleball Court Rental -2 passes")
+        st.subheader(":blue[SPORTING SPREE!]")
+        st.markdown("""
+        <ul style="list-style-position: inside; padding-left: 2px;">
+        <li> Unit 5 Season Pass -$100 </b> </li>
+        <li> BTT Cardio Tennis Clinic -2 passes</li>
+        <li> BTT Daytime Court Rental -2 passes</li>
+        <li> BTT Daytime Pickleball Court Rental -2 passes </li>
+        </ul>
+        """, unsafe_allow_html=True)
 
         st.markdown("""Total value: **:blue[$288]**""")  
         n3 = st.number_input("Number of tickets for Basket #3", min_value=0, max_value=max_tickets-(n1+n2), value=0)
