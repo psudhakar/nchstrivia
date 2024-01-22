@@ -130,7 +130,14 @@ with col2:
 
         st.markdown("""Total value: **:blue[$160]**""")
         n2 = st.number_input("Number of tickets for Basket #2", min_value=0, max_value=max_tickets-n1, value=0)
-        st.image("https://lh3.googleusercontent.com/d/1u5knlofIt5JRiJJrA8YvNITSc5YQ_oF_")
+
+        # Define the HTML hyperlink with the image
+        html_img_string = f'<a href="https://lh3.googleusercontent.com/d/1u5knlofIt5JRiJJrA8YvNITSc5YQ_oF_" target="_blank"><img src="https://lh3.googleusercontent.com/d/1u5knlofIt5JRiJJrA8YvNITSc5YQ_oF_" width=100% caption="legend"></a>'
+
+        # Display the image using `st.markdown`
+        st.markdown(html_img_string, unsafe_allow_html=True)
+
+        #st.image("https://lh3.googleusercontent.com/d/1u5knlofIt5JRiJJrA8YvNITSc5YQ_oF_")
    
 with col3:
     st.header("Basket #3")
@@ -147,7 +154,15 @@ with col3:
 
         st.markdown("""Total value: **:blue[$288]**""")  
         n3 = st.number_input("Number of tickets for Basket #3", min_value=0, max_value=max_tickets-(n1+n2), value=0)
-        st.image("https://lh3.googleusercontent.com/d/1qxMPTw2okKVuVfAFocfOw8w09wtoO8x8")
+
+        # Define the HTML hyperlink with the image
+        html_img_string = f'<a href="https://lh3.googleusercontent.com/d/1qxMPTw2okKVuVfAFocfOw8w09wtoO8x8" target="_blank"><img src="https://lh3.googleusercontent.com/d/1qxMPTw2okKVuVfAFocfOw8w09wtoO8x8" width=100% caption="legend"></a>'
+
+        # Display the image using `st.markdown`
+        st.markdown(html_img_string, unsafe_allow_html=True)
+
+
+        #st.image("https://lh3.googleusercontent.com/d/1qxMPTw2okKVuVfAFocfOw8w09wtoO8x8")
    
 
 
