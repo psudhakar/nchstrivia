@@ -107,7 +107,13 @@ with col1:
         """, unsafe_allow_html=True)
         st.markdown("""Total value: **:blue[$299]**""")
         n1 = st.number_input("Number of tickets for Basket #1", min_value=0, max_value=max_tickets, value=0)
-        st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
+
+        # Define the HTML hyperlink with the image
+        html_img_string = f'<a href="https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N" target="_blank"><img src="https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N" width=100% caption="legend"></a>'
+
+        # Display the image using `st.markdown`
+        st.markdown(html_img_string, unsafe_allow_html=True)
+#        st.image("https://lh3.googleusercontent.com/d/1bM7dQvdTXAdXq86WPMZkCkO82F8gKM8N")
    
    
 with col2:
