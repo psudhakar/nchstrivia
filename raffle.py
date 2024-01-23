@@ -84,7 +84,7 @@ with st.container(border=True):
     st.markdown("Drawing will be on **Sat, Feb 3rd at Parke Regency during  Trivia Night 2024.** (*Minimum number of raffle tickets  required)")
 
 with st.container(border=True):
-    st.markdown("### Choose # of tickets and split into buckets")
+    st.markdown("### Choose # of tickets and split into baskets")
     option = st.radio("How many tickets?", ["5 tickets for $10", "12 tickets for $20", "26 tickets for $40"])
     if option == "5 tickets for $10":
         max_tickets = 5
@@ -224,9 +224,9 @@ with st.form(key='ticket_form', clear_on_submit=False):
                     EMail: {email}
                     Phone: {phone}
                     Ticket Option: {max_tickets}
-                    Bucket-1: {n1}
-                    Bucket-2: {n2}
-                    Bucket-3: {n3}
+                    Basket-1: {n1}
+                    Basket-2: {n2}
+                    Basket-3: {n3}
                     """
                     data += "\n\nUse any payment methods below, if you have not paid yet. \n\n"
                     data += "Please add your name or email address in the comments section of the payment. \n\n"
