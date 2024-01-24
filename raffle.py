@@ -78,9 +78,9 @@ def save_to_sheet(data, sheet_url):
 st.markdown("")
 #st.markdown("**Get your raffle tickets early!** Play online now for Trivia Night: ")
 #st.markdown("[Join the raffle now!](https://bit.ly/nchsraffle)")
-st.markdown("##### ✨ Like to play trivia? Join us for NCHS Trivia Night. 🚀")
+st.markdown("##### ✨ Like to play trivia? Join us for NCHS Trivia Night. 🚀 [Register Here](https://bit.ly/nchstrivia)")
 #st.markdown("🎉 [Register Now](https://bit.ly/nchstrivia) 🚀")
-st.markdown("<center> <a href='https://bit.ly/nchstrivia'> <b>Register Here</b> </a> </center>", unsafe_allow_html=True)
+
 
 st.image("https://lh3.googleusercontent.com/d/1dY782sUfxKrRjjg3pcXLoOdOQ1mbXTTN")
 with st.container(border=True):
