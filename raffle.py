@@ -78,7 +78,7 @@ def save_to_sheet(data, sheet_url):
 st.markdown("")
 #st.markdown("**Get your raffle tickets early!** Play online now for Trivia Night: ")
 #st.markdown("[Join the raffle now!](https://bit.ly/nchsraffle)")
-st.markdown("##### ✨ Like to play trivia? Join us for NCHS Trivia Night. 🚀 [Register Here](https://bit.ly/nchstrivia)")
+st.markdown("##### ✨ Like to play trivia?  Join us for NCHS Trivia Night. 🚀 Register [here](https://bit.ly/nchstrivia)")
 #st.markdown("🎉 [Register Now](https://bit.ly/nchstrivia) 🚀")
 
 
